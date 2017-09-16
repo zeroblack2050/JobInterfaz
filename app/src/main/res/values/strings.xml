@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JobInterfaz</string>
+    <string name="user">\@ User</string>
+    <string name="like">1048\nLikes</string>
+    <string name="mesig">2047\nMe siguen</string>
+    <string name="sigui">253\nSiguiendo</string>
+    <string-array name="redes">
+        <item>Seleccione</item>
+        <item>Facebook</item>
+        <item>Google</item>
+        <item>Twitter</item>
+    </string-array>
+</resources>

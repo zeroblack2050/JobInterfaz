@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jasmany.jobinterfaz.Principal">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foto"
+        android:contentDescription="Tu foto Aquí"/>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        android:textAlignment="center"
+        android:editable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/likes"
+                android:contentDescription="Tu foto Aquí"/>
+
+            <EditText
+                android:id="@+id/likes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/like"
+                android:textAlignment="center"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/mesigue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mesiguen"
+                android:contentDescription="Tu foto Aquí"/>
+
+            <EditText
+                android:id="@+id/mesigues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mesig"
+                android:textAlignment="center"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/segui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seguir"
+                android:contentDescription="Tu foto Aquí"/>
+
+            <EditText
+                android:id="@+id/seguis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sigui"
+                android:textAlignment="center"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Notificación"
+            android:textAlignment="textStart"
+            android:paddingLeft="20dp"
+            android:editable="false"/>
+        <CheckBox
+            android:id="@+id/checkboxOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_marginEnd="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/syncOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Sincronizar"
+            android:textAlignment="textStart"
+            android:paddingLeft="20dp"
+            android:editable="false"/>
+
+        <Spinner
+            android:id="@+id/rede"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:entries="@array/redes">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"></LinearLayout>-->
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+
+    <Button
+        android:id="@+id/boton_cerrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
